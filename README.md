@@ -20,4 +20,17 @@ sort(a,a+n);
 sort (a+1,a+r+1);
 // sorts the array from index 1 to r
 // tc nlogn
+```
+# Function to check if the given number is Prime or not 
+```
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+// tc n root n
+```
+
 
